@@ -1,0 +1,18 @@
+Module 2(fundamentals of it)
+
+
+*Domaing:- domaing is one type of structure how to data store on server.
+
+*hosting and host:- 
+1]hosting;-on the internet provide website,data,storage and make it accesable by            client it prosses called hosting
+
+2]Host:-which thing store all data and provide acording  client reqvirment it         calleed host.
+
+*client:-who is requste on the server according it's information requirmeent it              called client.
+
+*Server:- who give information to client according it's requvirment by internet it           called server.
+
+*SEO:-Serch engine optimaiation.
+    :-SEO is one cycle how data transfer from server to client,it is work like this       cycle
+    :-client request on serch engine or web browser,than it's go to web server by       domain and http,than acording digitale marketing server choose which type       information provide to user,than information reach to user by net, this type       seo work.
+         

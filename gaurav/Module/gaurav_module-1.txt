@@ -1,0 +1,31 @@
+Modul -(Foundation)
+
+*Webpage:- Webpage is collection of data on website.
+
+*Webbrowser:- Webbroser is one platform when user can find information acording it's reqvirment on website.googlecrom,mozila firfox,yahoo. 
+
+*Webserver:- Webserver is help to user find informtion on internet,it wilde storege of data.
+
+*Website:- website is collection of webpages.
+
+*Serch engine:- Serch engine is use in find the informaation on internet.Ex google ,bing,yahoo.
+
+*HTML :- HTML means hypertext marcup language. Html is use to creat basic stucture of website.
+
+*SDLC :- It's full name is softwaer devlopment life cycle.
+it have total 6 step.
+1]planing
+2]analysis
+3]design
+4]implimantaion
+5]testing
+6]maintance
+
+*HTTP:- Hayper text transfer protocol.
+     :-it is for make easy comunication between server and client.
+     :-it transfer data(image,pdf,video) on internet.
+
+*URL :-Uniform resourse locater
+     :-it is helpful to client find information on internet
+     :-Url structuer can decied how your website is easly accesable.
+
