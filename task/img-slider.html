@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img-slider</title>
+    <style>
+        .perent {
+            height: 50vh;
+            width: 25vw;
+            margin: 10PX auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .perent img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .perent:hover img {
+            transform: scale(1.5);
+            transition: 0.5s;
+        }
+
+        .perent .child {
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.5);
+            height: inherit;
+            width: inherit;
+            position: absolute;
+            top: -100%;
+        }
+
+        .perent:hover .child {
+
+            transform: translateY(90%);
+            transition: 1s;
+        }
+
+        .child button {
+            border: 1px solid white;
+            border-radius: 15px;
+            color: white;
+            font-size: 20px;
+            background-color: transparent;
+            margin-top: 40vh;
+            margin-left: 8vw;
+            padding: 5% 10%;
+        }
+
+        .child button:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="perent">
+        <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"
+            alt="">
+        <div class="child"><button>Hello</button></div>
+    </div>
+</body>
+
+</html>
