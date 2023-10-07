@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-color-clip</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            padding: 50px;
+            margin: 20px auto;
+        }
+
+        .cli {
+            border: 30px double red;
+            background-color: yellow;
+            /* background-clip: border-box; */
+        }
+
+        .cli1 {
+            border: 30px double red;
+            background-color: yellow;
+            background-clip: padding-box;
+        }
+
+        .cli2 {
+            border: 30px double red;
+            background-color: yellow;
+            color: green;
+            background-clip: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cli"></div>
+    <div class="cli1"></div>
+    <div class="cli2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa modi neque ut. Atque accusantium eius officia
+        provident aspernatur consectetur quia eum cum beatae laborum, molestiae repellendus vitae maxime obcaecati vel.
+        Ullam voluptatem doloribus excepturi quaerat! Id corrupti consequuntur provident neque voluptatem veniam rerum
+
+    </div>
+
+</body>
+
+</html>

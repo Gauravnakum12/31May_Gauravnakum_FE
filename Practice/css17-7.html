@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-17/7</title>
+    <link rel="shortcut icon" href="https://www.iconsdb.com/icons/preview/royal-blue/css-xxl.png" type="image/x-icon">
+
+    <style>
+        .aft::after {
+            content: '';
+            border: 5px solid brown;
+            margin-left: 20px;
+        }
+
+        .fline::first-line {
+            background-color: rgb(126, 195, 74);
+        }
+
+        .fleter::first-letter {
+            font-size: 30px;
+            font-style: oblique;
+        }
+
+        .bef {
+            counter-reset: a;
+        }
+
+        h3::before {
+            content: counter(a)".";
+            counter-increment: a;
+            counter-reset: b;
+        }
+
+        li::before {
+            content: counter(a)"." counter(b)".";
+            counter-increment: b;
+            margin-left: 15px;
+
+        }
+
+        a {
+            text-decoration: none;
+            
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h3>after</h3>
+    <div class="aft">
+        Lorem ipsum dolor sit, amet consectetur
+    </div>
+
+    <h3>first-line</h3>
+    <div class="fline">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, ad fugit. Amet ab reiciendis incidunt ullam
+        ratione. Neque asperiores veniam sunt harum,
+        architecto eaque ipsam necessitatibus ratione, maiores voluptates voluptatibus.
+    </div>
+
+
+    <h3>first-leter</h3>
+    <div class="fleter">
+        Gaurav is my name
+    </div>
+
+
+    <div class="bef">
+        <h3>Food</h3>
+        <li>Gujrati</li>
+        <li>south-Indian</li>
+        <li>panjabi</li>
+        <h3> cold- drink</h3>
+        <li>Hot</li>
+        <li>Cold</li>
+    </div>
+
+    <br><br>
+    border-decoratin:-
+    <h3> <a href="https://github.com/"> Github</a></h3>
+
+</body>
+
+</html>
