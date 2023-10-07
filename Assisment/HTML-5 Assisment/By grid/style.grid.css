@@ -1,0 +1,591 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('./attachment/meetings-bg.jpg');
+}
+
+.red-but {
+    width: 40%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #A12C2F;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.red-but:hover {
+    filter: opacity(0.8);
+}
+
+/* -------------------------------------------------navigation----------------------------------------------- */
+nav {
+    width: 100%;
+    background: #1D2830;
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+}
+
+nav span {
+    font-style: italic;
+    color: #ffa500;
+}
+
+nav .p1,
+nav .p2 {
+    height: 25px;
+    margin-top: 5px;
+    display: inline-block;
+    color: #fff;
+}
+
+nav .p2 .fa-brands:hover {
+    color: #F5A425;
+}
+
+nav .fa-brands {
+    font-size: 20px;
+    margin: auto 10px;
+}
+
+/* -----------------------------------------------HEADER-------------------------------------- */
+header {
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    backdrop-filter: blur(5px);
+}
+
+header .fa-bars {
+    display: none;
+}
+
+header .open {
+    display: flex;
+}
+
+header .heding-1 {
+    margin: 0%;
+    padding: 0%;
+}
+
+header UL LI {
+    list-style: none;
+    display: inline;
+}
+
+.menu li {
+    padding: 0 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu li a {
+    color: #fff;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.menu li:hover a {
+    color: #ffa500;
+}
+
+#home {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#home img {
+    position: absolute;
+}
+
+.laptop {
+    height: inherit;
+    width: inherit;
+    filter: brightness(70%);
+}
+
+#home .info {
+    position: absolute;
+    height: 30%;
+    width: 40%;
+    top: 20%;
+    left: 5%;
+    color: #fff;
+    text-align: justify;
+}
+
+#home .info span {
+    color: #ffa500;
+}
+
+.heding-2 {
+    font-size: 22px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.heding-1 {
+    font-size: 35px;
+    font-family: 'Roboto Slab', serif;
+    margin: 10px auto;
+}
+
+#home .slide {
+    position: absolute;
+    height: 40vh;
+    width: 100%;
+    top: 80vh;
+    left: 0%;
+    display: grid;
+    grid-template-rows: 50vh;
+    grid-template-columns: repeat(1, 30%);
+    column-gap: 10px;
+}
+
+#home .si-1 {
+    grid-area: 1/1/2/2;
+}
+
+#home .si-2 {
+    grid-area: 1/2/1/3;
+}
+
+#home .si-3 {
+    grid-area: 1/3/1/4;
+}
+
+#home .slide-item {
+    height: 35vh;
+    width: 95%;
+    margin: auto;
+    border-radius: 10px;
+    background-image: url('https://images.unsplash.com/photo-1613832288685-5c81e86f89a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80');
+    background-size: 100% 100%;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#home .slide-item section {
+    height: 70px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+#home .slide-item p {
+    text-align: center;
+}
+
+.fa-less-than {
+    position: absolute;
+    top: 30%;
+    left: -15PX;
+    background-color: #fff;
+    color: black;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.fa-greater-than {
+    position: absolute;
+    top: 30%;
+    right: -15PX;
+    background-color: #fff;
+    color: black;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+/* -----------------------------------------section-2-meetings---------------------------------------------- */
+#Meetings {
+    height: 170vh;
+    width: 100%;
+    background-size: 100% 100%;
+    background-image: url('attachment/meetings-bg.jpg');
+}
+
+.title {
+    display: inline-block;
+    margin: 150px 0 0 43%;
+    color: #fff;
+}
+
+#Meetings hr {
+    width: 90%;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.meet {
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px 30px;
+}
+
+.meet-part {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.meet-1 {
+    padding: 20px 0;
+    grid-area: 1/1/2/2;
+}
+
+.meet-part .box {
+    text-align: center
+}
+
+.meet-2 {
+    grid-area: 1/2/2/3;
+}
+
+.meet-3 {
+    grid-area: 1/3/2/4;
+}
+
+.meet-4 {
+    grid-area: 2/2/3/3;
+}
+
+.meet-5 {
+    grid-area: 2/3/2/3;
+}
+
+.meet-part img {
+    border-radius: 10px 10px 0 0;
+    height: 60%;
+    width: 100%;
+}
+
+.meet-part .b-1 {
+    height: 39%;
+    border-radius: 10px;
+    width: 20%;
+    display: inline-block;
+}
+
+.meet-part .b-1 span {
+    color: #A12C2F;
+}
+
+.meet-part .b-2 {
+    display: inline-block;
+    height: 39%;
+    border-radius: 10px;
+    width: 78%;
+}
+
+/* ---------------------------------------Apply for degree----------------------------------------- */
+#Apply {
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%;
+    background-image: url('./attachment/apply-bg.jpg');
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: repeat(2, 0.35fr);
+    grid-template-rows: repeat(2, 0.4fr);
+    row-gap: 50px;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+#Apply .part {
+    text-align: justify;
+    color: #fff;
+    height: 90%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#Apply .part p {
+    line-height: 25px;
+}
+
+#Apply .part-2 {
+    grid-area: 1/2/3/3;
+    background-color: #fff;
+    color: #1D2830;
+}
+
+#Apply summary {
+    color: #F5A425;
+}
+
+#Apply .part-3 .b {
+    background-color: #F5A425;
+}
+
+/* ---------------------------------------------------courses------------------------------------------ */
+#courses {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%;
+    background-image: url('./attachment/meetings-bg.jpg');
+    background-attachment: fixed;
+}
+
+#courses img {
+    border-radius: 10px;
+}
+
+#courses .box {
+    margin: auto;
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 0.9fr);
+    column-gap: 10px;
+}
+
+.box .slide {
+    position: absolute;
+    top: 325px;
+    height: 50px;
+    width: inherit;
+    /* border: 1px solid #fff; */
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+#courses hr {
+    width: 90%;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#courses .b {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+#courses .box .b-1 {
+    grid-area: 1/1/2/2;
+}
+
+#courses .b-2 {
+    grid-area: 1/2/2/3;
+}
+
+#courses .b-3 {
+    grid-area: 1/3/2/4;
+
+}
+
+#courses .b-4 {
+    grid-area: 1/4/2/5;
+}
+
+.box .b img {
+    width: 100%;
+    height: 50%;
+}
+
+.box .b .rating {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.box .b .fa-solid {
+    color: #F5A425;
+}
+
+#courses .bottom {
+    margin: 20px auto;
+    width: 5%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#courses .bottom .child {
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+#courses .bottom .child:hover {
+    background-color: #F5A425;
+    transition: 0.5s;
+    transform: scale(1.5);
+}
+
+/* ----------------------------------------------About------------------------------------------------------------- */
+#ab {
+    height: 100vh;
+    width: 100%;
+    background-image: url("./attachment/apply-bg.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+#ab .h {
+    color: #fff;
+    margin-top: 150px;
+    display: inline-block;
+}
+
+#ab .about {
+    height: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 0.5fr);
+    justify-items: center;
+}
+
+#ab .about .parent {
+    height: 400px;
+    width: 80%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 0.5fr);
+    justify-items: center;
+}
+
+#ab .about .p2 {
+    grid-template-columns: 1fr;
+}
+
+.about .parent .child {
+    height: 250px;
+    width: 150px;
+    margin: 50px 50px;
+    display: inline-block;
+}
+
+.about .parent .child .box {
+    text-align: center;
+    height: 100px;
+    border-radius: 15px;
+    width: inherit;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.about .parent .c-2 {
+    margin-top: 50px;
+}
+
+.child .box h1 {
+    color: #F5A425;
+}
+
+.child .box h4 {
+    color: #fff;
+}
+
+/* -----------------------------------contact-------------------------------------------------------------- */
+#contact {
+    height: 100vh;
+    width: 100%;
+    background-image: url('./attachment/meetings-bg.jpg');
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+#contact .contact-1 {
+    height: 70vh;
+    width: 80%;
+    grid-column: span 3;
+    grid-area: 1/1/2/4;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.contact-1 h2 {
+    width: 90%;
+    margin: 20px auto 0;
+}
+
+.contact-1 fieldset {
+    border: none;
+}
+
+.contact-1 .info {
+    height: 60px;
+}
+
+.contact-1 .info input {
+    border: transparent;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 30px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.contact-1 .but {
+    width: 95%;
+    margin: 10px auto;
+}
+
+.contact-1 .message {
+    margin: auto;
+    height: 170px;
+    text-align: center;
+}
+
+.contact-1 .message textarea {
+    border: none;
+    background-color: #F5A425;
+    height: inherit;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 90%;
+}
+
+.send {
+    width: 200px;
+}
+
+#contact .contact-2 {
+    height: 85vh;
+    width: 80%;
+    background-color: #A12C2F;
+    border-radius: 20px;
+    color: #fff;
+    padding: 0 20px;
+    grid-column: span 3;
+    grid-area: 1/4/2/6;
+}
+  /* -----------------------------------------------footer----------------------------------------- */
+  footer {
+    border-top: 1px solid;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    background-image: url('./attachment/meetings-bg.jpg');
+}
+
+footer span {
+    color: #F5A425;
+}
