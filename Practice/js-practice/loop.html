@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> all loop</title>
+</head>
+
+<body>
+    <script>
+        // for-in
+        var vehicle = ['bike', 'car', 'bicycle', 'Truck']
+        for (let i in vehicle) {
+            document.write(i, '.&nbsp;');
+            document.write("I see " + vehicle[i] + '.' + "<br>");
+        }
+        // for - of
+        var vehicle = ['bike', 'car', 'bicycle', 'Truck']
+        for (let i of vehicle) {
+            document.write(i + ", ");
+        }
+        //for
+        for (i = 10; i < 20; i++) {
+            document.write('value =' + i + '<br>');
+        }
+        //while
+        var c = 0;
+        while (c < 10) {
+            document.write(c + '<br>');
+            ++i;
+        }
+        //
+        var d = 5;
+        do {
+            document.write(i + '<br>');
+        } while (d < 10)
+    </script>
+</body>
+
+</html>
