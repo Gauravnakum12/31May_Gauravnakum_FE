@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-20</title>
+    <script src="script.js"></script>
+    <style>
+        body {
+            height: 80vh;
+            width: 100%;
+            padding: 0%;
+            margin: 0%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FCE77E;
+        }
+
+        .container {
+            height: 40vh;
+            width: 35%;
+            border: 1px solid;
+            text-align: center;
+            background-color: greenyellow;
+            box-shadow: #11111a4d 0px 4px 16px, #11111a4d 0px 8px 24px, #11111a4d 0px 16px 56px;
+        }
+
+        button:hover {
+            background-color: #ffb6c1;
+        }
+
+        input:focus {
+            border: none;
+            background-color: #ffb6c1;
+        }
+
+        .box {
+            width: 50%;
+        }
+
+        .calc {
+            display: flex;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+        }
+
+        .operation {
+            padding: 11px;
+        }
+
+        h2 {
+            position: absolute;
+            top: 0;
+            left: 0%;
+        }
+        #ans{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2><u>Q-20: Create basic math operation in JS</u></h2>
+    <div class="container">
+        <h1>maths Operation</h1>
+        <div class="calc">
+            <div class="box b-1">
+                <label for="in1">Enter 1st number:</label> <br><br>
+                <label for="in2">Enter 2nd number:</label>
+                <div class="operation">
+                    <button id="add" onclick="add()">+</button>
+                    <button id="sub" onclick="sub()">-</button>
+                    <button id="mult" onclick="mult()">*</button>
+                    <button id="divi" onclick="divi()">/</button>
+                    <button id="percent" onclick="percent()">%</button>
+                </div>
+            </div>
+            <div class="box b-2">
+                <input type="text" id="v1" name="in1" title="in1"><br><br>
+                <input type="text" id="v2" name="in2" title="in2"><br><br>
+                <h3 >your answer is:<span id="ans"></span></h3>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

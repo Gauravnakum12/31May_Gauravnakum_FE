@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-21</title>
+    <script src="script.js"></script>
+    <style>
+        body {
+            height: 80vh;
+            width: 100%;
+            padding: 0%;
+            margin: 0%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FCE77E;
+        }
+
+        .container {
+            height: 75vh;
+            width: 30%;
+            border: 1px solid;
+            text-align: center;
+            background-color: greenyellow;
+            box-shadow: #11111a4d 0px 4px 16px, #11111a4d 0px 8px 24px, #11111a4d 0px 16px 56px;
+        }
+
+        button:hover {
+            background-color: #ffb6c1;
+        }
+
+        input:focus {
+            border: none;
+            background-color: #ffb6c1;
+        }
+
+        .box {
+            width: 50%;
+        }
+
+        .calc {
+            display: flex;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+        }
+
+        .operation {
+            padding: 11px;
+        }
+
+        h2 {
+            position: absolute;
+            top: 0;
+            left: 0%;
+        }
+        #total,#percent{
+            color: red;
+        }
+        label{line-height: 21px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2><u>Q-20: Create result</u></h2>
+    <div class="container">
+        <h1> Marksheet For Information technology  </h1>
+        <div class="calc">
+            <div class="box b-1">
+                <label for="in1">C language:</label> <br><br>
+                <label for="in2">C++ language:</label><br><br>
+                <label for="in3">Database:</label> <br><br>
+                <label for="in4">HTML:</label><br><br>
+                <label for="in5">CSS:</label> <br><br>
+                <label for="in6">php:</label><br><br>
+                <label for="in7">Core Java:</label><br>
+                <h3 >Total  is:<span id="total"></span>/350</h3>
+                <h3>percentage is: <span id="percent"></span> %</h3>
+            </div>
+            <div class="box b-2">
+                <input type="text" id="v1" name="in1" title="in1"><br><br>
+                <input type="text" id="v2" name="in2" title="in2"><br><br>      
+                <input type="text" id="v3" name="in3" title="in3"><br><br>        
+                <input type="text" id="v4" name="in4" title="in4"><br><br>        
+                <input type="text" id="v5" name="in5" title="in5"><br><br>          
+                <input type="text" id="v6" name="in6" title="in6"><br><br>        
+                <input type="text" id="v7" name="in7" title="in7"><br><br>
+                <button onclick=" percentage();add()">Result</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
