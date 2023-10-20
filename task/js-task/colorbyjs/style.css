@@ -25,7 +25,7 @@ details{
 p {
     color: gray;
 }
-li:hover{
+option:hover{
     background-color: rgba(0, 0, 0, 0.2);
 }
 /* --------------------------------------------heder------------------------------- */
