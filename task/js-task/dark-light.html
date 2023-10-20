@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="shortcut icon" href="https://www.vmcdn.ca/f/files/stalberttoday/0624-scistalsunmoon-supt.jpg;w=1200;h=800;mode=crop" type="image/x-icon">
+    <title>light-dark-them-gaurav</title>
+    <style>
+        .box {
+            height: 50vh;
+            width: 50%;
+            background: linear-gradient(45deg, red, orange, yellow, coral);
+            text-align: center;
+            font-size: 25px;
+            color: red;
+            margin: auto;
+        }
+        i{
+            font-size: 25px;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+   <p><i class="fa-solid fa-sun "></i></p> 
+    <div class="box">
+        Class add by Js
+    </div>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque maxime soluta, corporis amet odit maiores
+    pariatur ab sint facilis tenetur labore repudiandae itaque culpa modi explicabo accusantium enim nobis quas.
+    <script>
+        let dd = document.querySelector('div');
+        let body = document.querySelector('body');
+        let fav = document.querySelector('i');
+
+        fav.addEventListener('click', function () {
+            dd.classList.toggle('box');
+            fav.classList.toggle('fa-moon');
+     // ----------------------------------------for-dark them--------------------------------
+            if (fav.classList.toggle('fa-sun')) {
+                body.style.background = 'white';
+                body.style.color = 'black';
+            }
+            else {
+                body.style.background = 'black';
+                body.style.color = 'white';
+            }
+        });
+    </script>
+</body>
+</html>
