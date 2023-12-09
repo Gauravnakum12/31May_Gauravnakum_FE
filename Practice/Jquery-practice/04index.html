@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<style>
+
+</style>
+
+<body>
+    <ul id="list">
+        <li>
+            <span id="span1">span-1</span>
+        </li>
+        <li>2.</li>
+        <li>
+            <span id="span2">span-2</span>
+        </li>
+        <li>4.</li>
+        <li>5.</li>
+    </ul>
+</body>
+<script>
+    // $(document).ready(function () {
+    //     // let elm = $('#span1').parent();
+    //     // let elm = $('#span1').parents();
+    //     // let elm = $('#span1').parentsUntil('ul');
+    //     let elm = $('#span1').parentsUntil('body');
+    //     elm.css('border', '1px solid red')
+    // });
+
+    // $(document).ready(function () {
+    //     // let elm = $('#span1').next();
+    //     // let elm = $('#span1').nextUntil('#span2');
+    //     // let elm = $('#span1').nextAll();
+    //     // let elm = $('#span1').prevUntil('span1');
+    //     // let elm = $('#span1').prev();
+    //     // elm.css('border', '1px solid blue');
+    // });
+    $(document).ready(function () {
+        let lt = $('#list').children('');
+        // let lt = $('#list').find('#span2');
+        lt.css('border', '2px solid blue')
+    });
+</script>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlideToggle</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+            $("button").click(function(){
+                // jQuery('div').slideToggle();
+                // jQuery('div').slideUp('fast');
+                // jQuery('div').slideDown('slow');
+                jQuery('div').slideToggle(1000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, natus adipisci. Repellendus, vero saepe minima natus omnis ipsam reprehenderit iusto ducimus iste temporibus quam fuga sint molestias, nostrum enim magnam?</div>
+    <button type="button">SlideToggle</button>
+</body>
+</html>

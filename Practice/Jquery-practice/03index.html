@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<style>
+    #list {
+        background-color: aquamarine;
+    }
+
+    #box {
+        height: 300px;
+        width: 300px;
+        border: 1px solid;
+        padding: 10px;
+        margin: 15px;
+    }
+
+    .red {
+        background-color: red;
+    }
+
+    button {
+        padding: 10px;
+    }
+
+    .circle {
+        border-radius: 50%;
+    }
+</style>
+
+<body>
+    <!-- ----------------------------------------------------------1.------------------------------------------------- -->
+    <!-- ----------------before-----------
+    <ul id="list">
+        ---------------prepend---------
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        -- -------------------append-------
+    </ul>
+    -----------------after---------- -->
+    <!-- ----------------------------------------------------------2.------------------------------------------------- -->
+
+    <div id="box"></div>
+    <button id="btn">Button</button>
+    <script>
+        
+        // $(document).ready(function () {
+        //    $('#list').append('<li>4</li>')
+        // $('#list').prepend('<li>4</li>')
+        // $('#list').empty();
+        // $('#list').remove();
+        // });
+        $(document).ready(function () {
+            $('#btn').click(function () {
+                // $('#box').addClass('red');
+                // $('#box').removeClass('red')
+                // $('#box').toggleClass('circle')
+                // $('#box').css('background-color', 'yellow');
+
+                // let info = $('#box').width();
+                // let info = $('#box').innerWidth();
+                // let info = $('#box').outerWidth();
+                let info = $('#box').outerWidth(true);
+                alert(info);
+            })
+        });
+    </script>
+
+</html>
