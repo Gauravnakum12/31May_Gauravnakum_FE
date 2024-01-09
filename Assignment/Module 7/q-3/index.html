@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2><u>Q-3</u> How to create slider with animation? </h2>
+  <div class="slider-container">
+    <div class="slides">
+      <div class="slide s-1"><img src="./images/im-1.jpeg" alt=""></div>
+      <div class="slide s-2"><img src="./images/im-2.jpeg" alt=""></div>
+      <div class="slide s-3"><img src="./images/im-3.jpeg" alt=""></div>
+      <div class="slide s-4"><img src="./images/im-4.jpeg" alt=""></div>
+    </div>
+    <div class="prev">&#10094;</div>
+    <div class="next">&#10095;</div>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    let slideIndex = 0;
+    let autoSlideInterval;
+
+    function showSlide(index) {
+      const slides = $('.slide');
+      if (index >= slides.length) {
+        slideIndex = 0;
+      }
+      if (index < 0) {
+        slideIndex = slides.length - 1;
+      }
+      slides.css('transform', 'translateX(' + (-slideIndex * 100) + '%)');
+    }
+
+    function startAutoSlide() {
+      autoSlideInterval = setInterval(function () {
+        slideIndex++;
+        showSlide(slideIndex);
+      }, 4000); // Change 3000 to adjust the time interval in milliseconds (3 seconds in this case)
+    }
+
+    function stopAutoSlide() {
+      clearInterval(autoSlideInterval);
+    }
+
+    startAutoSlide(); // Start automatic sliding
+
+    $('.next').click(function () {
+      stopAutoSlide(); // Stop auto sliding when manually clicking next
+      slideIndex++;
+      showSlide(slideIndex);
+      startAutoSlide(); // Restart auto sliding
+    });
+
+    $('.prev').click(function () {
+      stopAutoSlide(); // Stop auto sliding when manually clicking prev
+      slideIndex--;
+      showSlide(slideIndex);
+      startAutoSlide(); // Restart auto sliding
+    });
+  });
+</script>
+
+</html>
