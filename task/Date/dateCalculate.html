@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>distance in date</title>
+    <style>
+        * {
+            border-radius: 3px;
+        }
+
+        body {
+            height: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightcyan;
+        }
+
+        div {
+            border: 1px solid;
+            background-color: lightpink;
+            height: 250px;
+            width: 30%;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 50px;
+        }
+
+        #calculate {
+            padding: 10px;
+            background-color: lightcyan;
+        }
+
+        #info {
+            color: red;
+        }
+
+        input {
+            background-color: lightcyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="d1">Date-1:-</label>
+        <input type="date" name="" id="d1"> <br><br>
+
+        <label for="d2">Date-2:-</label>
+        <input type="date" name="" id="d2"> <br><br>
+
+        <button id="calculate">Calculate</button>
+        <p id="info"> </p>
+    </div>
+    <script>
+        let calculate = document.getElementById('calculate');
+        let info = document.getElementById('info');
+
+        calculate.addEventListener('click', function () {
+            let date1 = new Date(document.getElementById('d1').value);
+            let date2 = new Date(document.getElementById('d2').value);
+            // console.log(date1);
+            // console.log(date1.getTime());
+            if (date2.getTime() && date1.getTime()) {
+                let TimeDifference = date2.getTime() - date1.getTime();
+                // console.log(difference);
+                let DayDifference = TimeDifference / (1000 * 3600 * 24)
+                console.log(DayDifference);
+                info.innerHTML ='Difference between given date is' + '&nbsp' + DayDifference + '&nbsp' + 'days.';
+            }
+            else {
+                info.innerHTML = ('select two dates value properly');
+            }
+        });
+    </script>
+</body>
+</html>
