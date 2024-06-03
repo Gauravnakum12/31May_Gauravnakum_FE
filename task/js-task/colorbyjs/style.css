@@ -1,0 +1,113 @@
+* {
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+#bg {
+    margin: 0;
+    padding: 0%;
+    height: 100vh;
+}
+#select-1{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    text-align: center;
+}
+details{
+    font-size: 14px !important;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+p {
+    color: gray;
+}
+option:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* --------------------------------------------heder------------------------------- */
+header {
+    height: 30vh;
+    text-align: center;
+}
+
+section {
+    height: 70vh;
+}
+
+header .roll {
+    height: 10px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: orange;
+    margin: auto;
+}
+
+header .roll::before {
+    content: '';
+    height: 2px;
+    width: 100px;
+    background-color: orange;
+    position: absolute;
+    margin-top: 3px;
+}
+
+header .roll::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    background: orange;
+    transition: 1s;
+    margin: 3px -100px;
+}
+
+/* ------------------------------------------aside------------------------------------ */
+aside {
+    float: left;
+    height: inherit;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside img {
+    border-radius: 10px;
+    height: 90%;
+    width: 90%;
+}
+
+/* -----------------------------------------article------------------------------------ */
+article {
+    float: left;
+    height: inherit;
+    width: 65%;
+    text-align: justify;
+    font-size: 14px;
+}
+
+article .container {
+    height: 50%;
+}
+
+.container .box {
+    height: 100%;
+    width: 45%;
+    float: left;
+}
+
+.container .b2 {
+    float: right;
+}
+
+.box .logo {
+    text-align: center;
+    font-size: 40px;
+    height: 50px;
+    width: 60px;
+    background-color: orange;
+}

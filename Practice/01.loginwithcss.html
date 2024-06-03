@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login Form</title>
+    <style>
+        fieldset {
+            width: 50%;
+            margin: auto;
+            height: auto;
+            padding: 50px 25px;
+            border: 2px solid;
+            background-color: rgb(225, 225, 103);
+            color: black;
+        }
+
+        .text,
+        .pass {
+            width: 100%;
+            background-color: aquamarine;
+            border: 1px solid black;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .pass:hover,
+        .text:hover {
+            background-color: lightcoral;
+        }
+
+        .text:focus,
+        .pass:focus {
+            outline: none;
+            border: none;
+            border-bottom: 1px solid;
+
+        }
+
+        .sub {
+            margin-left: 250px;
+            padding: 8px 15px;
+            background-color: lightyellow;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        .sub:hover {
+            background-color: lightcoral;
+            outline: groove;
+            outline-offset: 2px;
+        }
+
+        img {
+            margin-left: 200px;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPODawz88lwHim_uZgW_WWTehhCjUJPiZbIw&usqp=CAU"
+            alt="Devloper">
+
+        <form action="#" class="form" method="post">
+            <div>
+                <label for="name">Username :</label>
+                <input class="text" type="text" required placeholder="Enter your user name ">
+
+                <label for="pass">Password</label>
+                <input class="pass" type="password" minlength="8" maxlength="8" pattern="[a-z,A-Z,0,1-9]{8}" required
+                    placeholder="  type password in velied form"><br>
+
+                <input class="sub" type="submit" value="login">
+
+                <input class="CHEK" type="checkbox" checked="checked" value="">Remeber Me <br><br>
+                <span>You haven't account? <a href="../Form/02.SIGNUP.HTML" target="_blank"> &nbsp;
+                        sign up</a></span>
+
+            </div>
+        </form>
+    </fieldset>
+</body>
+
+</html>

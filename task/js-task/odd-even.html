@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd-Even</title>
+    <style>
+        #ans {
+            height: 100px;
+            width: 350px;
+            background-color: lightgreen;
+            text-align: center;
+            border: 2px dotted black;
+            margin: auto;
+            font-size: 22px;
+        }
+        button{
+            padding: 10px 15px;
+            background-color: rgb(222, 144, 89);
+            margin-left: 49%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ans">
+    </div>
+   <a href="../task/odd-even.html"> <button>Clear</button></a>
+    <script>
+        let A = parseInt(prompt('Enter value for check odd or even'));
+        if (A % 2 == 0) {
+            document.getElementById('ans').innerHTML = 'your given value is <b> Even </b>.';
+        }
+        else{
+            document.getElementById('ans').innerHTML = 'your given value is <b> Odd </b>.';
+        }
+    </script>
+</body>
+
+</html>

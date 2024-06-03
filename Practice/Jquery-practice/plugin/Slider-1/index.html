@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-stack">
+            <a class="buttons prev" href="#"> &lt;</a>
+            <!-- Card List -->
+            <ul class="card-list">
+                <li class="card" >
+                    <img src="https://images.unsplash.com/photo-1699933486971-bcbc02b03ec1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-list__image">
+                    <h3 class="card-list__text">Card 1 </h3>
+                </li>
+                <li class="card" >
+                    <img src="https://images.unsplash.com/photo-1700068877703-8ab9b45f64b2?q=80&w=1452&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-list__image">
+                    <h3 class="card-list__text">Card 2 </h3>
+                </li>
+                <li class="card">
+                    <img src="https://images.unsplash.com/photo-1700164805522-c3f2f8885144?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-list__image">
+                    <h3 class="card-list__text">Card 3 </h3>
+                </li>
+                <li class="card">
+                    <img class="card-list__image" src="https://images.unsplash.com/photo-1700159915671-88035f62afc1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3M3x8fGVufDB8fHx8fA%3D%3D">
+                    <h3 class="card-list__text">Card 4 </h3>
+                </li>
+                <li class="card">
+                    <img src="https://images.unsplash.com/photo-1699893062191-6ac866d4bf60?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHx8"
+                        class="card-list__image">
+                    <h3 class="card-list__text">Card 5 </h3>
+                </li>
+            </ul>
+            <!-- Next Navigation -->
+            <a class="buttons next" href="#">></a>
+        </div>
+    </div>
+</body>
+<script>
+    var $card = $('.card');
+    var lastCard = $(".card-list .card").length - 1;
+
+    $('.next').click(function () {
+        var prependList = function () {
+            if ($('.card').hasClass('activeNow')) {
+                var $slicedCard = $('.card').slice(lastCard).removeClass('transformThis activeNow');
+                $('ul').prepend($slicedCard);
+            }
+        }
+        $('li').last().removeClass('transformPrev').addClass('transformThis').prev().addClass('activeNow');
+        setTimeout(function () { prependList(); }, 150);
+    });
+
+    $('.prev').click(function () {
+        var appendToList = function () {
+            if ($('.card').hasClass('activeNow')) {
+                var $slicedCard = $('.card').slice(0, 1).addClass('transformPrev');
+                $('.card-list').append($slicedCard);
+            }
+        }
+
+        $('li').removeClass('transformPrev').last().addClass('activeNow').prevAll().removeClass('activeNow');
+        setTimeout(function () { appendToList(); }, 150);
+    });
+</script>
+
+</html>

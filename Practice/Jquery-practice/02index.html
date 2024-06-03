@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>value</title>
+    <style>
+        button{
+            padding: 10px;
+        }
+    </style>
+    <script src="../jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <p id="inp1"><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident officiis beatae perferendis fugiat voluptatum expedita, sit porro facere aperiam aut?</span></p>
+    <input type="text" id="inp2">
+    <button id="btn"></button>
+    <script>
+         // let jQ = $.noConflict();
+        $(document).ready(function(){
+            $('#btn').click(function(){
+                // let txt = $('#inp1').text(); 
+                // let txt = $('#inp1').html('gaurav'); 
+                // let txt = $('#inp1').html(); 
+                // let txt = $('#inp1').html('<h1>gaurav<h1>'); 
+                // alert(txt);
+                let value = $('#inp2').val();
+                alert(value)
+            })
+        })
+    </script>
+</body>
+</html>

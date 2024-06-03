@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background Image background-origin</title>
+    <style>
+        div {
+            height: 400px;
+            width: 50%;
+            padding: 50px;
+            margin: 20px auto;
+
+        }
+
+        .img {
+
+            border: 50px solid rgba(0, 0, 0, 0.5);
+            background: url('https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGFwdG9wfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');
+            background-size: 100% 100%;
+            background-origin: border-box;
+            background-repeat: no-repeat;
+        }
+
+        .img1 {
+            border: 50px double rgba(0, 200, 0, 0.3);
+            background: url('https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGFwdG9wfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');
+            background-size: 100% 100%;
+            /* background-origin: padding-box; */
+            background-repeat: no-repeat;
+
+        }
+
+        .img2 {
+            border: 50px double rgb(0, 0, 200);
+            background: url('https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGFwdG9wfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');
+            background-size: 100% 100%;
+            background-origin: content-box;
+            background-repeat: no-repeat;
+            color: green;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="img"></div>
+    <div class="img1"></div>
+    <div class="img2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque dolor quam unde laboriosam rem
+        libero! Illum repellat nemo vitae nostrum repellendus, exercitationem doloremque odit quasi fugiat beatae
+        ducimus laborum tempora!
+        Sequi voluptatum id obcaecati eveniet ea excepturi. Natus facilis quaerat blanditiis ab. Illo magnam, hic animi
+        adipisci ab architecto corporis quaerat assumenda laborum autem odit itaque reprehenderit voluptatum.
+        Necessitatibus, fuga.
+        Quae repudiandae necessitatibus ullam iure aliquam beatae error quisquam, inventore a impedit pariatur
+        cupiditate quibusdam mollitia quidem vitae optio non fuga, sunt cumque laborum adipisci tempora qui!
+        Reprehenderit, odit velit?
+        Provident, voluptate? Maiores maxime accusamus aut. Possimus voluptatibus consequuntur autem. Quo pariatur ea
+        voluptatibus nostrum voluptates? Incidunt similique at ipsum maxime, dolor obcaecati earum illum aut ipsam
+        deleniti blanditiis eveniet!
+        Repudiandae assumenda minus, earum adipisci deserunt exercitationem maiores sint consequuntur debitis laborum
+        natus reprehenderit esse odit in. Voluptate vitae ipsum consectetur molestiae eum, iste accusantium, mollitia
+        itaque eos qui maiores?
+        Ut reiciendis quaerat, eos quisquam possimus iure, praesentium alias expedita quidem fugiat laudantium ex quos
+        eaque autem minima. Quibusdam qui non corporis illo cum eum repudiandae, quas est! Sint, voluptate.
+        Itaque, fuga! Dolorum ea ex perspiciatis beatae tempore exercitationem quae alias maiores debitis eos! Molestiae
+        mollitia deserunt earum quos eius nobis, quaerat tempore! Quos nam commodi, odit saepe hic cumque!
+        Sed maxime, vitae nihil natus consequatur cum cumque quia asperiores harum sit iure maiores, doloremque fuga
+        neque culpa ipsam amet ut quae deserunt impedit assumenda mollitia? Unde beatae deserunt voluptatem?
+        Mollitia libero quae possimus numquam tenetur excepturi nam magni accusamus, fuga dicta asperiores nihil
+        obcaecati, quasi soluta officiis blanditiis qui repudiandae rerum impedit ratione esse? Repellendus numquam
+        facilis autem hic.
+        Dolore doloribus nisi aliquid, dicta rerum nam non enim! Assumenda minus fugit a dignissimos tenetur. Quisquam,
+    </div>
+
+</body>
+
+</html>

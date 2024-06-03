@@ -1,0 +1,247 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.hed {
+    position: fixed;
+    z-index: 1;
+    top: 0%;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.home-go {
+    position: sticky;
+    top: 90%;
+    left: 90%;
+    z-index: 1;
+}
+
+/* ---------------------option of Header----------------------- */
+.option {
+    position: absolute;
+    top: 0;
+    height: inherit;
+    margin-left: 15%;
+}
+
+.hed ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.hed ul li a {
+    color: green;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 15.8px;
+
+}
+
+.hed ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.get-info {
+    position: absolute;
+    left: 85.6%;
+}
+
+/* ----------------------Dropdown-Menu----------------------- */
+.menu {
+    position: relative;
+    cursor: pointer;
+}
+
+.submenu a {
+    padding: 10px !important;
+    text-decoration: none;
+    display: block;
+    background-color: white;
+}
+
+.submenu a:hover {
+    background-color: rgb(238, 224, 224) !important;
+}
+
+.submenu {
+
+    position: absolute;
+    text-decoration: none;
+    top: 33px;
+    left: 0%;
+    display: none;
+}
+
+.menu:hover .submenu {
+    display: block;
+}
+
+button {
+    border: none;
+    padding: 0PX 50PX;
+    height: 50PX;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+}
+
+button:hover {
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 7px;
+
+}
+
+/* ----------------------------------------First-big-img--------------------------------------------- */
+.big {
+    margin: 70px 0 10px 0;
+    height: 550px;
+    width: 100%;
+    position: relative;
+}
+
+.big .box {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 70px;
+    position: absolute;
+}
+
+.big .b-1 img {
+    filter: brightness(50%);
+    height: 100%;
+    width: 100%;
+}
+
+.big .box h1,
+.box h3 {
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 0 0 10px blue;
+}
+
+.big .box h1:hover {
+    cursor: pointer;
+}
+
+.big .box h1 span {
+    color: yellow;
+    font-weight: 100;
+}
+
+.b-2 {
+    top: 100px;
+}
+
+/* <!-------------------------------------Deal & Offer---------------------------------------> */
+.deal {
+    margin: 5px 0 0px 0;
+    width: 100%;
+    height: 250px;
+
+}
+
+.offer {
+    display: inline-block;
+    width: 500px;
+    height: 225px;
+    margin: 10px 20px 0 0;
+}
+
+.offer:hover {
+    box-shadow: 0 0 20px gray;
+}
+
+/* ------------------------------------------About-us------------------------------------------------- */
+.about-us {
+    height: 470px;
+}
+
+.about {
+    height: 400px;
+    width: 40%;
+    float: left;
+    margin: 2% 1% 1% 6%;
+}
+
+.about-1 {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+.about-1 img {
+    border-radius: 50%;
+}
+
+.about-1 img:hover {
+    box-shadow: 0 0 15px;
+}
+
+.about p {
+    text-align: justify;
+}
+
+/* -----------------------------------------foot-------------------------------------------------- */
+.foot {
+    height: 250px;
+    width: 100%;
+    background-color: #28a745;
+}
+
+.foot h3 {
+    margin-bottom: 30px;
+}
+
+.box ul li {
+    list-style-type: none;
+}
+
+.foot-1 .data a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.foot-1 .data a:hover {
+    font-weight: 600;
+}
+
+.foot-1 {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    float: left;
+    height: 75%;
+    width: 20%;
+    margin: 1% 0 0 1.5%;
+}
+
+.data .data-float {
+    float: left;
+    margin: 3% 0 0 2%;
+    height: 50px;
+    width: 30%;
+}
+
+.foot-1 .data span {
+    color: green;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.foot-1 .data span:hover {
+    color: white;
+    background-color: transparent;
+}

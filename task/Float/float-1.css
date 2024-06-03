@@ -1,0 +1,289 @@
+
+body{
+    background-color: rgb(160, 191, 192,);
+}
+.hed{
+   
+   height: 50px;
+   width: 100%;
+    background-color: rgba(0, 0, 0,0.7);
+    border: 1px solid;
+}
+.hed-child{
+    float: right;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+.hed span{
+    border: 1px solid white;
+    color: white;
+    background-color: gray;
+    padding: 10px;
+    
+}
+.page{
+    margin: auto;
+    height: auto;
+    width: 90%;
+    /* border: 1px solid red; */
+    /* overflow: auto; */
+}
+.search-1{
+/* border: hidden; */
+padding: 5px;
+}
+
+ .page .sec-ii h2 {
+    width: 60%;
+    border-bottom: 5px solid gray;  
+}
+
+.sec-i{
+    width: 200px;
+    padding: 10px;
+    border: 1px double ;
+    margin-left: 70%;
+    margin-top: 20px;
+}
+/* <!-------------------------------------------part_2-----------------------------------------------------> */
+.page .sec-2{
+    height: 400px;
+    width: 100%;
+    border: 1px solid pink;
+}
+
+.page .sec-ii1{
+    height: 400px;
+    width: 50%;
+    float: left;
+    /* border: 2px dotted; */
+}
+ .page .sec-ii1 .sec11, .sec-ii1 .sec111{
+    text-align: justify;
+    height: 200px;
+    width: 50%;
+    float: left;
+    /* border: 2px solid; */
+
+}
+ .page .sec-ii1 .sec11 button{
+    padding: 5px;
+    height: 30px;
+    width: 90%;
+    background-color:rgb(73, 163, 163);
+    color:white;
+    font-weight:bold;
+
+}
+
+.page .sec-ii1 .sec11 img{
+    height: 100%;
+    width: 90%;
+}
+.page .sec-ii2 {
+    height: 400px;
+    width: 49%;
+    float: right;
+    text-align: center;
+    /* border: 1px dotted blue;   */
+}
+.page .sec-ii2 .b-1{
+    font-size: 17px;
+    padding: 18px;
+    border: 2px double;
+    background-color: chartreuse;
+}
+
+.page .sec-iii h2 {
+    width: 60%;
+    border-bottom: 5px solid gray;
+  }
+  /* <!-------------------------------------------Part_3------------------------------------------------------> */
+  .sec3{ 
+    height: 350px;
+    width: 100%;
+    border: 1px solid pink;
+    float: left;
+  }
+  
+.page .sec3-1{
+    height: 350px;
+    width: 50%;
+    float: left;
+    /* border: 1px dotted blue ; */
+}
+ .page .sec3-1 .sec3-11, .sec3-1 .sec3-12{
+    text-align: justify;
+    height: 200px;
+    width: 49%; 
+    float: left;
+    /* border: 2px solid; */
+}
+.page .sec3-1 .sec3-11 img{
+    height: 100%;
+    width: 95%;
+
+}
+.page .sec3-1 .sec3-11 button{
+    padding: 5px;
+    height: 30px;
+    width: 95%;
+    background-color:rgb(73, 163, 163);
+    color:white;
+    font-weight:bold;
+}
+.sec3{ 
+    height: 350px;
+    width: 100%;
+    /* border: 1px solid green; */
+    float: left;
+} 
+.sec3 .sec3-2{
+    height: 350px;
+    width: 35%;
+    text-align: center;
+    /* border: 1px blue solid;   */
+    float: right;
+}
+
+ /* ----------------------part_3 photos ------ */
+.box3{
+    height: 40%;
+    width: 40%;
+    border: 1px solid;
+    float: left;
+    margin: 17px 10px 10px 20px;
+    box-shadow: 0px 0px 10px gray;
+}
+.box3 img{
+    height: 100%;
+    width: 100%;
+}
+ /* <!---------------------------------Part_4----------------------------------------------> */
+.sec4{ 
+    height: 350px;
+    width: 100%;
+    border: 1px solid pink;
+    float: left;
+}
+
+.sec4 .sec4-1{
+    height: 350px;
+    width: 50%;
+    float: left;
+    /* border: 1px dotted blue ; */
+}
+.sec4 .sec4-2{
+    height: 350px;
+    width: 49.6%;
+    text-align: center;
+    /* border: 1px blue solid;   */
+    float: right;
+}
+ .sec4-1 .sec4-11, .sec4-1 .sec4-12{
+    text-align: justify;
+    height: 200px;
+    width: 49.6%; 
+    float: left;
+    /* border: 1px solid black; */
+}
+.page .sec4-1 .sec4-11 img{
+    height: 100%;
+    width: 95%;
+
+}
+.page .sec4-1 .sec4-11 button{
+    padding: 5px;
+    height: 30px;
+    width: 95%;
+    background-color:rgb(73, 163, 163);
+    color:white;
+    font-weight:bold;
+}
+.box-4{
+    height:22% ;
+    width:20% ;
+    border: 1px solid;
+    float: left;
+    margin: 24px 17px 10px 10px ;
+    box-shadow: 0px 0px 10px gray;
+}
+.box-4 img{
+    height: 100%;
+    width: 100%;
+}
+/* <!-------------------------------------------part-5------------------------------------------> */
+.sec5{ 
+    height: 350px;
+    width: 100%;
+    border: 1px solid pink;
+    float: left;
+}
+
+.sec5 .sec5-1{
+    height: 350px;
+    width: 50%;
+    float: left;
+    /* border: 1px dotted blue ; */
+}
+.sec5 .sec5-2{
+    height: 350px;
+    width: 49.6%;
+    text-align: center;
+    /* border: 1px blue solid;   */
+    float: right;
+}
+ .sec5-1 .sec5-11, .sec5-1 .sec5-12{
+    text-align: justify;
+    height: 200px;
+    width: 49.6%; 
+    float: left;
+    /* border: 1px solid black; */
+}
+.page .sec5-1 .sec5-11 img{
+    height: 100%;
+    width: 95%;
+}
+.page .sec5-1 .sec5-11 button{
+    padding: 5px;
+    height: 30px;
+    width: 95%;
+    background-color:rgb(73, 163, 163);
+    color:white;
+    font-weight:bold;
+}
+.box-5{
+    height:40% ;
+    width:60% ;
+    border: 1px solid;
+    float: left;
+    margin: 20px 0px 15px 120px ;
+    box-shadow: 0px 0px 10px gray;
+}
+.box-5 img {
+    height: 100%;
+    width: 100%;
+}
+/* <---------------------- footer ---------------------------------> */
+.foot{
+    margin: auto;
+   height: 100px;
+   width: 100%;
+    background-color: rgba(0, 0, 0,0.5);
+    border: 1px solid;
+    float: left;
+    color: white;
+    font-size: 20px;
+}
+.lfoot{
+    margin-left: 20%;
+float: left;
+}
+.rfoot{
+    margin-right:20% ;
+float: right;
+}
+.foot span {
+    color: rgb(0, 0, 250);
+    font-weight: 200;
+}

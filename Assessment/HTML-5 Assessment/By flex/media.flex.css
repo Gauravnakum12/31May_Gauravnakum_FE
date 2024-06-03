@@ -1,0 +1,872 @@
+/* --------------------------------------320px — 480px: Mobile devices--------------------------------- */
+
+@media (min-width:0px) and (max-width:500px) {
+    body {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    section {
+        margin-top: 10px;
+    }
+
+    .title {
+        margin: 0% 20px;
+        text-align: center;
+        display: inline-block;
+        color: #fff;
+    }
+
+    /*-------------------------------------------navigation------------------------------ */
+    nav {
+        height: 30px;
+    }
+
+    nav .p1 {
+        display: none;
+    }
+
+    nav .p2 {
+        text-align: center;
+        height: 30px;
+    }
+
+    nav .fa-brands {
+        font-size: 18px;
+        margin: auto 10px;
+    }
+
+    /* -----------------------------------------------HEADER-------------------------------------- */
+    header {
+        height: 30px;
+        justify-content: space-around;
+        /* display: none; */
+    }
+
+    .heding-1 {
+        font-size: 18px;
+        font-family: 'Roboto Slab', serif;
+        margin: 10px auto;
+        display: inline-block;
+    }
+
+    header .open {
+        flex-direction: column;
+        position: relative;
+        margin-top: 7px;
+    }
+
+    .menu {
+        padding: 0%;
+        width: 100px;
+        display: none;
+        position: absolute;
+        top: 5px;
+        left: -40px;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .open:hover .menu {
+        display: block;
+    }
+
+    .menu li {
+        display: block;
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .menu li a {
+        display: inline-block;
+        color: #fff;
+        padding: 1px 10px;
+        text-decoration: none;
+    }
+
+    header .fa-bars {
+        display: block;
+    }
+
+    /* --------------------------------------home section(1)---------------------------------- */
+    #home {
+        height: 80vh;
+        width: 100%;
+        /* border: 1px solid; */
+        position: relative;
+    }
+
+    #home img {
+        position: absolute;
+    }
+
+    .laptop {
+        height: inherit;
+        width: inherit;
+        filter: brightness(70%);
+    }
+
+    #home .info {
+        position: absolute;
+        height: auto;
+        width: 100%;
+        top: 10%;
+        left: 0%;
+        text-align: justify;
+    }
+
+    .heding-2 {
+        font-size: 16px;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    #home .slide {
+        height: 120vh;
+        width: 100%;
+        top: 50vh;
+        left: 0%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: space-around;
+    }
+
+    #home .slide-item {
+        width: 90%;
+    }
+
+    .fa-less-than,
+    .fa-greater-than {
+        display: none;
+    }
+
+    #home .slide-item section {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+    }
+
+    #home .slide-item p {
+        text-align: center;
+    }
+
+    /* ------------------------------------------section-2-meetings----------------------------------------------- */
+    #Meetings {
+        height: 380vh;
+        width: 100%;
+    }
+
+    .title {
+        margin: 90vh 0 0 35%;
+    }
+
+    .meet-part {
+        height: 90%;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    /* ---------------------------------------Apply for degree----------------------------------------- */
+    #Apply .part {
+        text-align: justify;
+        color: #fff;
+        height: 80vh;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    #Apply .part-2 {
+        color: #1D2830;
+    }
+
+    #Apply .part-1,
+    #Apply .part-3 {
+        height: 50vh;
+    }
+
+    /* ---------------------------------------------------courses------------------------------------------ */
+    #courses {
+        height: auto;
+        width: 100%;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+
+    #courses .title {
+        margin-top: 10px;
+    }
+
+    #courses hr {
+        width: 90%;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .box .slide {
+        display: none;
+    }
+
+    #courses .box {
+        margin: auto;
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #courses .box .b {
+        height: 280px;
+        width: 90%;
+        background-color: #fff;
+        line-height: 25px;
+        text-align: justify;
+        margin-top: 5px;
+    }
+
+    .box .b img {
+        width: 100%;
+        height: 50%;
+    }
+
+    .box .b .rating {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        font-weight: 700;
+    }
+
+    #courses .bottom {
+        display: none;
+    }
+
+    /* ----------------------------------------------About------------------------------------------------------------- */
+    #ab {
+        height: auto;
+        width: 100%;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+
+    #ab .h {
+        margin-top: 5px;
+    }
+
+    #ab .about {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #ab .about .parent {
+        height: 60vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .about .parent .child {
+        height: 200px;
+        width: 100%;
+        justify-content: center;
+        align-content: space-around;
+    }
+
+    .about .parent .child .box {
+        text-align: center;
+        height: 75px;
+        border-radius: 15px;
+        width: 80%;
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    .box h1 {
+        margin-top: 0%;
+    }
+
+    .about .parent .c-2 {
+        margin-top: 0px;
+    }
+
+    /* -----------------------------------contact-------------------------------------------------------------- */
+    #contact {
+        height: auto;
+        width: 100%;
+        background-color: #F5A425;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact .contact-1 {
+        height: 70vh;
+        width: 90%;
+
+    }
+
+    .contact-1 h2 {
+        width: 90%;
+        margin: 20px auto 0;
+    }
+
+    .contact-1 fieldset {
+        border: none;
+    }
+
+    .contact-1 .info {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .contact-1 .info input {
+        margin: 5px auto;
+        height: 50px;
+        width: 90%;
+    }
+
+    .contact-1 .but {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .contact-1 .message {
+        margin: auto;
+        height: 170px;
+        text-align: center;
+    }
+
+    .contact-1 .message textarea {
+        border: none;
+        height: inherit;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.1);
+        width: 90%;
+    }
+
+    .send {
+        width: 200px;
+    }
+
+    #contact .contact-2 {
+        background-color: #A12C2F;
+
+    }
+
+    #contact .contact-1,
+    .contact-2 {
+        height: 90vh !important;
+        width: 90% !important;
+    }
+
+    footer {
+        border-top: 0px solid;
+        padding: 0;
+    }
+}
+
+/* -----------------------------------------481px — 768px: iPads, Tablets------------------------------ */
+
+@media (min-width:501px) and (max-width:768px) {
+    body {
+        margin: 0%;
+        padding: 0%;
+        background-image: url('./attachment/meetings-bg.jpg');
+    }
+
+    .title {
+        margin: 0% 20px;
+        text-align: center;
+        display: inline-block;
+        color: #fff;
+    }
+
+    /*-------------------------------------------navigation------------------------------ */
+    nav .p1 {
+        display: none;
+    }
+
+    nav .p2 {
+        height: 30px;
+    }
+
+    nav .fa-brands {
+        font-size: 18px;
+        margin: auto 10px;
+    }
+
+    /* -----------------------------------------------HEADER-------------------------------------- */
+    header {
+        height: 30px;
+        justify-content: space-around;
+    }
+
+    .heding-1 {
+        font-size: 18px;
+        font-family: 'Roboto Slab', serif;
+        margin: 10px auto;
+        display: inline-block;
+    }
+
+    header .open {
+        flex-direction: column;
+        position: relative;
+        margin-top: 7px;
+    }
+
+    .menu {
+        padding: 0%;
+        width: 100px;
+        display: none;
+        position: absolute;
+        top: 5px;
+        left: -40px;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .open:hover .menu {
+        display: block;
+    }
+
+    .menu li {
+        display: block;
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .menu li a {
+        display: inline-block;
+        color: #fff;
+        padding: 1px 10px;
+        text-decoration: none;
+    }
+
+    header .fa-bars {
+        display: block;
+    }
+
+    /* --------------------------------------home section(1)---------------------------------- */
+    #home {
+        height: 50vh;
+        width: 100%;
+        position: relative;
+    }
+
+    #home img {
+        position: absolute;
+    }
+
+    .laptop {
+        height: inherit;
+        width: inherit;
+        filter: brightness(80%);
+    }
+
+    #home .info {
+        position: absolute;
+        height: auto;
+        width: 100%;
+        width: 100%;
+        top: 10%;
+        left: 0%;
+        text-align: justify;
+    }
+
+    .heding-2 {
+        font-size: 16px;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    #home .slide {
+        height: 120vh;
+        width: 100%;
+        top: 40vh;
+        left: 0%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: space-around;
+    }
+
+    #home .slide-item {
+        width: 70%;
+    }
+
+    .fa-less-than,
+    .fa-greater-than {
+        display: none;
+    }
+
+    #home .slide-item section {
+        height: 50px;
+        width: 50px;
+    }
+
+    #home .slide-item p {
+        text-align: center;
+    }
+
+    /* ------------------------------------------section-2-meetings------------------------------------ */
+
+    #Meetings {
+        height: 330vh;
+        width: 100%;
+    }
+
+    .title {
+        margin: 110vh 0 0 35%;
+    }
+
+    .meet-part {
+        height: 110%;
+        width: 40%;
+        margin-bottom: 10px;
+    }
+
+    /* ---------------------------------------Apply for degree----------------------------------------- */
+    #Apply .part {
+        text-align: justify;
+        color: #fff;
+        height: 80vh;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    #Apply .part-2 {
+        color: #1D2830;
+    }
+
+    #Apply .part-1,
+    #Apply .part-3 {
+        height: 40vh;
+    }
+
+    /* ---------------------------------------------------courses------------------------------------------ */
+    #courses {
+        height: 150vh !important;
+        width: 100%;
+    }
+
+    .box .slide {
+        display: none;
+    }
+
+    #courses .bottom {
+        display: none;
+    }
+
+    #courses .box {
+        flex-wrap: wrap;
+    }
+
+    #courses .box .b {
+        height: 60vh !important;
+    }
+
+    #courses .title {
+        margin-top: 50px;
+    }
+
+    #courses {
+        height: 130vh;
+    }
+
+    #courses .box .b {
+        margin-top: 20px;
+        height: 50vh;
+        width: 45%;
+    }
+
+    /* ----------------------------------------------About--------------------------------------------- */
+    #ab {
+        height: auto;
+        width: 100%;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+
+    #ab .h {
+        margin-top: 5px;
+    }
+
+    #ab .about {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #ab .about .parent {
+        height: 60vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .about .parent .child {
+        height: 200px;
+        width: 100%;
+        justify-content: center;
+        align-content: space-around;
+    }
+
+    .about .parent .child .box {
+        text-align: center;
+        height: 75px;
+        border-radius: 15px;
+        width: 80%;
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    .box h1 {
+        margin-top: 0%;
+    }
+
+    .about .parent .c-2 {
+        margin-top: 0px;
+    }
+
+    /* -----------------------------------contact------------------------------------------------------ */
+    #contact {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+
+    }
+
+    #contact .contact-1,
+    .contact-2 {
+        height: 100vh !important;
+        width: 90%;
+    }
+
+    .contact-1 h2 {
+        width: 90%;
+        margin: 20px auto 0;
+    }
+
+    .contact-1 fieldset {
+        border: none;
+    }
+
+    .contact-1 .info {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .contact-1 .info input {
+        margin: 5px auto;
+        height: 50px;
+        width: 90%;
+
+    }
+
+    .contact-1 .but {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .contact-1 .message {
+        margin: auto;
+        height: 170px;
+        text-align: center;
+    }
+
+    .send {
+        width: 200px;
+    }
+
+    #contact .contact-2 {
+        height: 80vh;
+        width: 90%;
+        background-color: #A12C2F;
+        border-radius: 20px;
+        color: #fff;
+    }
+
+    footer {
+        border-top: 0px solid;
+        padding: 0;
+    }
+}
+
+/* -------------------------------------------769px — 1024px: Small screens, laptops.------------------ */
+@media (min-width:769px) and (max-width:1024px) {
+
+    /*  -------------------------------header-----------------------------------------------  */
+    header {
+        height: 40px;
+        justify-content: space-around;
+    }
+
+    .heding-1 {
+        font-size: 18px;
+        font-family: 'Roboto Slab', serif;
+        margin: 10px auto;
+        display: inline-block;
+    }
+
+    header .open {
+        flex-direction: column;
+        position: relative;
+        margin-top: 7px;
+    }
+
+    .menu {
+        padding: 0%;
+        width: 100px;
+        display: none;
+        position: absolute;
+        top: 5px;
+        left: -40px;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .open:hover .menu {
+        display: block;
+    }
+
+    .menu li {
+        display: block;
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .menu li a {
+        display: inline-block;
+        color: #fff;
+        padding: 1px 10px;
+        text-decoration: none;
+    }
+
+    header .fa-bars {
+        display: block;
+    }
+
+    /*  -----------------------home section(1)-----------------------------------------------  */
+    .heding-1 {
+        text-align: left;
+        font-size: 30px;
+    }
+
+    #home .slide-item section {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+
+    #home .slide-item img {
+        height: inherit;
+    }
+
+    /* ------------------------------------------section-2-meetings----------------------------------------------- */
+    .meet-part img {
+        border-radius: 10px 10px 0 0;
+        height: 50%;
+        width: 100%;
+    }
+
+    /* ---------------------------------------Apply for degree----------------------------------------- */
+    #Apply {
+        height: auto;
+        width: 100%;
+    }
+
+    #Apply .part-2 {
+        padding: 0%;
+        background-color: #fff;
+        line-height: 22px !important;
+        color: #1D2830;
+    }
+
+    #Apply .part-2 p {
+        line-height: 18px !important;
+    }
+
+    /* ----------------------------------------------courses----------------------------------- */
+    .box .slide {
+        display: none;
+    }
+
+    #courses .bottom {
+        display: none;
+    }
+
+    #courses .box {
+        flex-wrap: wrap;
+    }
+
+    #courses .title {
+        margin-top: 50px;
+    }
+
+    #courses {
+        height: 130vh;
+    }
+
+    #courses .box .b {
+        margin-top: 20px;
+        height: 50vh;
+        width: 45%;
+    }
+
+    /* ----------------------------------------------About-------------------- */
+    #ab {
+        height: 90vh;
+        width: 100%;
+    }
+
+    #ab .h {
+        margin-top: 70px;
+    }
+
+    /* ----------------------------------------------contact-------------------- */
+    #contact .contact-2 {
+        height: 90vh;
+    }
+}
+
+/* ------------------------------------- 1025px — 1200px: Desktops, large screens---------------------- */
+@media (min-width:1025px) and (max-width:1200px) {
+
+    /*  -----------------------home section(1)-----------------------------------------------  */
+    .heding-1 {
+        text-align: left;
+    }
+
+    #courses .box .b {
+        margin-top: 20px;
+        height: 60vh;
+        /* width: 45%; */
+    }
+
+    /* ---------------------------------------Apply for degree----------------------------------------- */
+    #Apply {
+        height: auto;
+        width: 100%;
+    }
+
+    #Apply .part-2 {
+        padding: 0%;
+        background-color: #fff;
+        line-height: 22px !important;
+        color: #1D2830;
+    }
+
+    #Apply .part-2 p {
+        line-height: 18px !important;
+    }
+
+    /* ----------------------------------------------courses----------------------------------- */
+    #courses .bottom {
+        display: none;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <h1 id="heading"></h1>
+    <h2 id="heading-2"></h2>
+    <h3 id="heading-3"></h3>
+
+
+    <label for="in1">value-1:</label>
+    <input type="text" id="in1" name="in1" title="in1">
+
+    <label for="in2">value-2:</label>
+    <input type="text" id="in2" name="in2" title="in2"><br><br><br>
+
+
+    <button onclick="ad()" style="padding: 10px 30px;">Ans.</button>
+    <br><br>
+
+    <label for="answer">answer:</label>
+    <input type="text" id="answer" name="answer" title="answer">
+
+    <script>
+        // --------------------------- operator 1.addition---------------------------
+        var in1 = document.getElementById('in1');
+        var in2 = document.getElementById('in2');
+        var answer = document.getElementById('answer');
+    
+        //    -------function-----
+        function ad() {
+            answer.value = parseInt(in1.value) + parseInt(in2.value);
+        }
+        let b = 5;
+        b = 4;
+        let c = 2;
+
+        document.getElementById('heading').innerHTML = ' I am learning javascript';
+        document.getElementById('heading-2').innerHTML = 'a=10 b=5 ';
+        // document.write(a + b)
+
+        console.log('Multiplication is :' + a * c)
+        console.log('Addition is :' + (a + c))
+        console.log('subtraction is :' + (a - c))
+        console.log('division is :' + a / c)
+        console.log(a + c)
+        console.log('increment in a is:' + ++a)
+        console.log('decrement in a is :' + --a)
+        console.log('------info of addition operator-------')
+    </script>
+</body>
+
+</html>
