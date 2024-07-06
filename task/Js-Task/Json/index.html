@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Json-Task </title>
+</head>
+
+<body>
+    <script>
+        const Person = [
+            {
+                "id": 1,
+                "name": "Student-1",
+                "branch_ID": 101
+            },
+            {
+                "id": 2,
+                "name": "Student-2",
+                "branch_ID": 102
+            },
+            {
+                "id": 3,
+                "name": "Student-3",
+                "branch_ID": 103
+            },
+            {
+                "id": 4,
+                "name": "Student-4",
+                "branch_ID": 101
+            },
+            {
+                "id": 5,
+                "name": "Student-5",
+                "branch_ID": 102
+            },
+            {
+                "id": 6,
+                "name": "Student-6",
+                "branch_ID": 103
+            },
+            {
+                "id": 7,
+                "name": "Student-7",
+                "branch_ID": 101
+            }
+        ];
+
+        const course = [
+            {
+                "Course_Id": 101,
+                "CourseName": "Computer_Engineering",
+                "CollegeName": "Gec-Rajkot"
+            },
+            {
+                "Course_Id": 102,
+                "CourseName": "Civil_Engineering",
+                "CollegeName": "Gec-Rajkot"
+            },
+            {
+                "Course_Id": 103,
+                "CourseName": "Chemical_Engineering",
+                "CollegeName": "Gec-Rajkot"
+            }
+        ];
+
+        const Container = document.getElementById("StudentMenu");
+
+        (function Featching() {
+
+            const courseMap = {};
+            course.forEach(item => {
+                courseMap[item.Course_Id] = item;
+            });
+            // console.log(courseMap);
+            for (let i of Person) {
+                i.branch = courseMap[i.branch_ID];
+            }
+        })();
+
+        console.log(Person);
+
+    </script>
+</body>
+
+</html>
