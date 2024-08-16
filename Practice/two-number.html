@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // {Number[]} Numbers
+        // Number target 
+        //----> return Number[]
+        let sumCheck = function (Numbers, target) {
+
+            let object = {};
+            
+            for (let index = 0; index < Numbers.length; index++) {
+                let ans = target - Numbers[index];
+                if (object[ans] != undefined) {
+                    return [object[ans], index]
+                }
+                object[Numbers[index]] = index
+            }
+        }
+        
+        let result = sumCheck([1, 2, 3, 4, 5, 6, 7, 8, 9], 9);
+        console.log(result);
+    </script>
+</body>
+
+</html>
