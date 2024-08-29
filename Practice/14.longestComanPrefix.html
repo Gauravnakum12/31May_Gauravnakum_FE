@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longest Comman Prefix</title>
+</head>
+
+<body>
+    <script>
+        var longestCommonPrefix = function (strs) {
+
+            if (strs.length === 0) return ''; //  if there are no strings
+            let temp = strs[0];
+
+            for (let i = 1; i < strs.length; i++) {
+                while (strs[i].indexOf(temp) !== 0) {
+                    temp = temp.slice(0, -1);
+
+                    // if the temp becomes empty, 
+                    if (temp === '') return '';
+                }
+            }
+
+            return temp;
+        };
+        let arr = ["flower", "flow", "flight"]
+        let a = longestCommonPrefix(arr)
+        console.log(a);
+
+    </script>
+</body>
+
+</html>
