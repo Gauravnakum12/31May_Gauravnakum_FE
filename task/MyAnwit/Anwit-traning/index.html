@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function longDivisionSqrt(number, precision) {
+    // Initial variables
+    let quotient = 0;
+    let remainder = 0;
+    let divisor = 0;
+    let tempNumber = number;
+    
+    // Split number into pairs (for the integer part)
+    let pairs = [];
+    while (tempNumber > 0) {
+        pairs.unshift(tempNumber % 100);
+        console.log(tempNumber);
+        tempNumber = Math.floor(tempNumber / 100);
+
+        console.log(pairs);
+        //   console.log(tempNumber);
+    }
+
+    // Loop through pairs and perform long division steps
+    for (let i = 0; i < pairs.length; i++) {
+        // Bring down the next pair
+        remainder = remainder * 100 + pairs[i];
+
+        // Find the next digit in the quotient
+        let nextDigit = 0;
+        for (let j = 1; j <= 9; j++) {
+            if ((divisor * 10 + j) * j <= remainder) {
+                nextDigit = j;
+            } else {
+                break;
+            }
+        }
+
+        // Update the quotient and remainder
+        quotient = quotient * 10 + nextDigit;
+        remainder -= (divisor * 10 + nextDigit) * nextDigit;
+        divisor = quotient * 2; // Update divisor as 2 times the current quotient
+    }
+
+    // Handle decimal precision
+    if (precision > 0) {
+        quotient += "."; // Add the decimal point
+
+        for (let i = 0; i < precision; i++) {
+            remainder *= 100; // Bring down two zeros for each decimal place
+            let nextDigit = 0;
+            
+            for (let j = 1; j <= 9; j++) {
+                if ((divisor * 10 + j) * j <= remainder) {
+                    nextDigit = j;
+                } else {
+                    break;
+                }
+            }
+
+            quotient += nextDigit;
+            remainder -= (divisor * 10 + nextDigit) * nextDigit;
+            divisor = parseInt(quotient.replace(".", "")) * 2;
+        }
+    }
+
+    return parseFloat(quotient);
+}
+longDivisionSqrt(325, 4);console.log(longDivisionSqrt(325, 4));
+
+
+    </script>
+</body>
+</html>
